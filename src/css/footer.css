@@ -1,0 +1,68 @@
+.footer{
+ display: grid;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.footer-content{
+   
+    display: inline-flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-left: 25%;
+    margin-top: 10px;
+    color: #f1f1f1;
+    font-size: 17px;
+}
+    
+.footer-content h4{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.footer-content li{
+    font-size: 1.1rem;
+    list-style: none;
+}
+.footer-content a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.redes{
+    height: 250px;
+    width: 250px;
+    background-color: var(--color-pri);
+    text-decoration: none;
+
+    list-style: none;
+    
+    border: 2px solid   #f7d372  ;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    
+
+
+}
+.ajuda{
+   height: 250px;
+    width: 250px;
+    background-color: var(--color-pri);
+    border: 2px solid   #f7d372  ;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+
+}
+
+.empresa{
+   height: 250px;
+    width: 250px;
+    background-color: var(--color-pri);
+    border: 2px solid   #f7d372  ;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+
+
+
+}

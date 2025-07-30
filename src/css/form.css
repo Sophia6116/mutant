@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+
+
+
+}
+
+body {
+    background-color: #090d19;
+    color: rgb(149, 124, 124);
+    margin: 1.9rem;
+    padding: 1rem;
+    font-family: Cormorant, sans-serif;
+    display: flex;
+    text-align: center;
+
+
+
+
+
+}
+
+form {
+    width: 25rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 6%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f7d372 ;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+
+
+
+}
+
+.formnome ::placeholder {
+    color: #090d19;
+    font-size: 1rem;
+    width: 10px 10px;
+}
+
+.formemail ::placeholder {
+    color: #090d19;
+    font-size: 1rem;
+}
+
+.formmensagem ::placeholder {
+    text-align: left;
+    color: #090d19;
+    font-size: 1.2rem;
+
+}
+
+.msg {
+    width: 20rem;
+    height: 10rem;
+}
+
+.nm {
+    width: 15rem;
+}
+
+.em {
+    width: 15rem;
+}
+
+.formnome {
+    margin: 5px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+.formemail {
+    margin: 5px;
+    font-size: 1.3rem;
+}
+
+.formmensagem {
+    margin: 20px;
+}

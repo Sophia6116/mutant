@@ -1,0 +1,391 @@
+/* reset basico slk */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variaveis ae */
+:root{
+    --color-pri: #090d19;
+    --color-sec: #f7d372 ;
+    --color-font1: #f1f1f1  ;
+    --color-font2:#e0be5f ;
+     --gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+}
+body{
+    background-color: var(--color-pri);
+    font-family: Cormorant, sans-serif;
+    font-weight: 500;
+    margin-right: 5px;
+    margin-left: 0px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+nav ul{
+    list-style: none;
+    margin-top: 15px;
+    
+}
+
+
+
+
+
+
+.inicio{
+    width: 100%;
+    min-height: 100dvh; /*Esta é uma unidade de medida relativa à altura da viewport dinâmica*/
+    padding: 1rem;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-sec);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.topo{
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  height: 60px;
+  
+}
+
+
+
+header h1{
+    font-size: 4rem;
+    font-weight: 100;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 15px;
+    margin: 0;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: var(--color-sec);
+    width: -100vh;
+}
+
+.menu-header {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+
+}
+.item-menu{
+    font-size: 20px;
+    color:#f1f1f1;
+     text-decoration: none;
+    font-weight: 900;
+    transition: color .5s;
+    text-transform: uppercase;
+position: relative;
+display:inline-block ;
+ 
+}
+.item-menu::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-sec);
+  transition: width 0.3s ease;
+}
+
+.item-menu:hover::after {
+  width: 100%;
+}
+
+
+a:hover{
+    color: var(--color-font2);
+}
+
+
+
+
+
+
+/* MENU HAMBURGUER */
+
+.hamburguer {
+    cursor: pointer;
+    position:relative;
+    z-index: 2;
+    
+    display: none;
+    flex-direction: column;
+
+}
+
+.barra {
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background-color: var(--color-sec);
+    margin: .5rem auto;
+    border-radius: 10px;
+    transition: .5s;
+    margin-right: 10px;
+    position: relative;
+    top: -64px;
+    right: 20px;
+    padding: 0,5px;
+}
+
+#produtos{
+    display: grid;
+    margin-top: 15px;
+    justify-content: center;
+    
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.joia{
+    width: 350px;
+    height: 300px;
+    margin: 2px;
+    padding: 5px;
+    margin-top: 10px;
+    
+    background-color: #ffffff;
+
+}
+.joia:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--color-sec);
+    cursor: pointer;
+}
+.joia img{
+    
+    padding: 7px;
+    width: 100%;
+    height: 200px;
+    
+    
+    
+}
+
+article h4{
+    font-size: 25px;
+    color: black;
+}
+article p{
+    font-size: 20px;
+    color: black;
+
+
+}
+
+.footer-content{
+   
+    display: inline-flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 40px;
+    color: #f1f1f1;
+    font-size: 17px;
+}
+    
+.footer-content h4{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.footer-content li{
+    font-size: 1.1rem;
+    list-style: none;
+}
+.footer-content a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.redes{
+    height: 250px;
+    width: 250px;
+    background-color: var(--color-pri);
+    text-decoration: none;
+
+    list-style: none;
+    
+    border: 2px solid   #f7d372  ;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    
+
+
+}
+.ajuda{
+   height: 250px;
+    width: 250px;
+    background-color: var(--color-pri);
+    border: 2px solid   #f7d372  ;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+
+}
+
+.empresa{
+   height: 250px;
+    width: 250px;
+    background-color: var(--color-pri);
+    border: 2px solid   #f7d372  ;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+
+
+
+}
+
+
+.footer-container{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-top: 10px;
+    color: var(--color-pri);
+    padding: 20px;
+    font-size: 17px;
+    background: #e0be5f;
+}
+.tituf{
+    text-align: center;
+
+    
+
+}
+.direitos{
+
+    text-align: center;
+
+}
+.infos{
+    text-align: center;
+
+}
+
+@media(width <=1024px) {
+
+    .menu-header{
+        width: 100%;
+        height: 100vh;
+        background: var(--color-pri);
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: -100%;
+        gap: 6rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: .5s;
+    }
+    header h1{
+        font-size: 1.4rem;
+        margin-right: 5px;
+    }
+
+    #titulo{
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    
+    #produtos{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    
+    .logo{
+        width: 60px;
+        height: 50px;
+        
+    }
+    .active {
+        left: 0;
+    }
+    /* MENU HAMBURGUER */
+
+    .hamburguer {
+        display: block;
+        
+    }
+
+    /* Primeira linha */
+    .hamburguer.active .barra:first-child {
+        transform: translateY(13px) rotate(360deg) rotate(45deg);
+    }
+    /* Segunda linha */
+    .hamburguer.active .barra:nth-child(2) {
+        opacity: 0;
+    }
+    /* Terceira linha */
+    .hamburguer.active .barra:last-child {
+        transform: translateY(-13px) rotate(-360deg) rotate(-45deg);
+    } 
+
+
+ .footer-content{
+        text-align: center;
+        width: 100%;
+        margin-left: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+  .footer-container{
+  text-align: center;
+  max-width: 100%;
+
+  }
+
+  .tituf{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .direitos{
+    text-align: center;
+    margin: 10px;
+  }
+  .infos{
+    margin: 10px;
+    text-align: center;
+  }
+}

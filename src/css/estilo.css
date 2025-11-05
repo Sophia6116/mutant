@@ -8,7 +8,7 @@
 
 /* variaveis ae */
 :root{
-    --color-pri: #090d19;
+    --color-pri: #000000;
     --color-sec: #f7d372 ;
     --color-font1: #f1f1f1  ;
     --color-font2:#e0be5f ;
@@ -16,7 +16,7 @@
 }
 body{
     background-color: var(--color-pri);
-    font-family: Cormorant, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     font-weight: 500;
     margin-right: 5px;
     margin-left: 0px;
@@ -172,7 +172,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
-.joia{
+.fantasia{
     width: 350px;
     height: 300px;
     margin: 2px;
@@ -182,13 +182,13 @@ main{
     background-color: #ffffff;
 
 }
-.joia:hover{
+.fantasia:hover{
     transform: scale(1.02);
     transition: transform 0.3s ease;
     border: 1px solid var(--color-sec);
     cursor: pointer;
 }
-.joia img{
+.fantasia img{
     
     padding: 7px;
     width: 100%;

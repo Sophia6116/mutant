@@ -14,7 +14,7 @@
 }
 body{
     background-color: var(--color-pri);
-    font-family: Cormorant, sans-serif;
+    font-family: sans-serif;
     font-weight: 500;
     margin-right: 5px;
     margin-left: 0px;
@@ -295,6 +295,7 @@ article p{
 .tituf{
     text-align: center;
     
+    
 
 }
 .direitos{
@@ -388,6 +389,7 @@ article p{
     text-align: center;
     font-size: 25px;
     margin-top: 20px;
+  /* fonte decente depois */
   }
   .direitos{
     text-align: center;

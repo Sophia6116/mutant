@@ -13,12 +13,19 @@
      --gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
 }
 body{
-    background-color: var(--color-pri);
+    background-image: url('../assets/fundo.jpg');
+    background-size: cover;
+    background-position: center;
     font-family: Cormorant, sans-serif;
     font-weight: 500;
     margin-right: 5px;
     margin-left: 0px;
+    filter: blur(5px)
     
+}
+body img{
+ filter: blur(5px)
+
 }
 html{
     scroll-behavior: smooth;

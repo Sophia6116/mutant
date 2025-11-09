@@ -1,87 +1,58 @@
-/* reset basico slk */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   box-sizing: border-box;
+   padding: 0%;
+   margin: 0%;
 }
 
-/* variaveis ae */
-:root{
-    --color-pri: #000000;
-    --color-sec: #f7d372 ;
-    --color-font1: #f1f1f1  ;
-    --color-font2:#e0be5f ;
-     --gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+/* VARIAVEIS CSS*/
+:root {
+   --branquinho: #f1f1f1;
+   --roxoclaro:var(--vermelhoescuro);
+   --roxomedio: #4e1a8d;
+   --vermelhoescuro: #fedd00;
+   --gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+
 }
 body{
-    background-color: var(--color-pri);
+   background-color: #000000;
     font-family: sans-serif;
     font-weight: 500;
     margin-right: 5px;
     margin-left: 0px;
     /* margin-bottom: 30px; */
     /* margin-top:30px ; */
-    
-}
-#mutant {
-    font-family: 'Bangers';
-    font-size: 78px;
-}
-html{
-    scroll-behavior: smooth;
 }
 
-
-
-
-
-
-
-nav ul{
-    list-style: none;
-    margin-top: 15px;
-    
+.topo {
+   position: relative;
+   text-align: center;
+   padding: 20px 0;
+   margin-top: -20px;
 }
 
-
-
-
-
-
-.inicio{
-    width: 100%;
-    min-height: 100dvh; /*Esta é uma unidade de medida relativa à altura da viewport dinâmica*/
-    padding: 1rem;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--color-sec);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.topo{
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    
-}
-.logo{
-  position: absolute;
+.logo {
+   position: absolute;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
   height: 80px;
   
+
+}
+
+header {
+   background-color: #000000;
+   height: 120px;
+   color: var(--branquinho);
+   padding: 20px;
+   /* display: flex; */
+
+   justify-content: space-around;
 }
 
 
-
-header h1{
-    font-size: 4rem;
+header h1 {
+   font-size: 4rem;
     font-weight: 100;
     z-index: 2;
     text-align: center;
@@ -90,208 +61,196 @@ header h1{
     list-style: none;
     margin-bottom: 15px;
     margin: 0;
-}
-hr{
-    border: none;
-    height: 2px;
-    background-color: var(--color-sec);
-    width: -100vh;
+    font-family: 'Bangers';
+    font-size: 78px;
 }
 
+
 .menu-header {
-    display: flex;
+   list-style: none;
+
+  display: flex;
     gap: 5rem;
     justify-content: center;
 
 }
-.item-menu{
-    font-size: 20px;
+
+.item-menu {
+   font-size: 20px;
     color:#f1f1f1;
      text-decoration: none;
     font-weight: 900;
     transition: color .5s;
     text-transform: uppercase;
 position: relative;
+z-index:10;
 display:inline-block ;
- 
+font-family: 'Poppins';
+
 }
-.item-menu::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0;
-  background-color: var(--color-sec);
-  transition: width 0.3s ease;
+
+.item-menu::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 2px;
+   width: 0;
+   background-color: var(--roxoclaro);
+   transition: width 0.3s ease;
 }
 
 .item-menu:hover::after {
-  width: 100%;
-}
-
-
-a:hover{
-    color: var(--color-font2);
+   width: 100%;
 }
 
 
 
+/* LOGIN MENUUUUUUUUUUUUU */
+#login {
+   font-family: Questrial;
+   font-size: 18px;
+   color: var(--branquinho);
+   text-decoration: none;
+   font-weight: 400;
+   transition: color .5s;
+   text-transform: uppercase;
+   position: relative;
+   display: inline-block;
 
+}
+
+#login::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 2px;
+   width: 0;
+   background-color: var(--roxoclaro);
+   transition: width 0.3s ease;
+}
+
+#login:hover::after {
+   width: 100%;
+}
+
+
+
+a:hover {
+   color: var(--roxoclaro);
+}
 
 
 /* MENU HAMBURGUER */
 
 .hamburguer {
-    cursor: pointer;
-    position:relative;
-    z-index: 2;
-    
-    display: none;
-    flex-direction: column;
-
+   margin-right: -15px;
+   cursor: pointer;
+   position: relative;
+   z-index: 999;
+   display: none;
+   flex-direction: column;
 }
 
 .barra {
-    display: block;
-    width: 3rem;
-    height: .3rem;
-    background-color: var(--color-sec);
-    margin: .5rem auto;
-    border-radius: 10px;
-    transition: .5s;
-    margin-right: 10px;
-    position: relative;
-    top: -64px;
-    right: 20px;
-    padding: 0,5px;
+   display: block;
+   width: 3rem;
+   height: .3rem;
+   background-color: var(--roxoclaro);
+   margin: .5rem auto;
+   border-radius: 10px;
+   transition: .5s;
+   margin-right: 10px;
+   position: relative;
+   top: -64px;
+   right: 20px;
+   padding: 0.5px;
 }
-
-#produtos{
-    display: grid;
-    margin-top: 75px;
-    justify-content: center;
-    margin-bottom: 75px;
-    flex-wrap: flex;
-    
-}
-
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-.fantasia{
-    width: 350px;
-    height: 400px;
-    margin: 5px;
-    padding: 20px;
-    /* margin-top: 30px; */
-    
-    
-    background-color: #ffffff;
-    border :5px solid #d40f0d;
-
-}
-.fantasia:hover{
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-    border: 1px solid var(--color-sec);
-    cursor: pointer;
-}
-.fantasia img{
-    
-    padding: 0px;
+.inicio{
     width: 100%;
-    height: 270px;
-    margin-bottom: 0px;
+    min-height: 100dvh; /*Esta é uma unidade de medida relativa à altura da viewport dinâmica*/
+    padding: 1rem;
     
-    
-    
-    
-}
-.fantasiad{
-    padding-top: 170px;
-    padding:20px;
-}
-
-article h4{
-    font-size: 25px;
-    color: black;
-}
-article p{
-    font-size: 20px;
-    color: black;
-
-
-}
-
-.footer-content{
-   
-    display: inline-flex;
-    justify-content: space-around;
-    width: 50%;
-    margin-left: 40px;
-    color: #f1f1f1;
-    font-size: 17px;
-}
-    
-.footer-content h4{
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-}
-.footer-content li{
-    font-size: 1.1rem;
-    list-style: none;
-}
-.footer-content a{
-    text-decoration: none;
-    color:#ffffff;
-}
-.redes{
-    height: 250px;
-    width: 250px;
-    background-color: var(--color-pri);
-    text-decoration: none;
-
-    list-style: none;
-    
-    border: 2px solid   #f7d372  ;
-    text-align: center;
-    padding: 2%;
-    margin: 2%;
-    
-
-
-}
-.ajuda{
-   height: 250px;
-    width: 250px;
-    background-color: var(--color-pri);
-    border: 2px solid   #f7d372  ;
-    text-align: center;
-    padding: 2%;
-    margin: 2%;
-
-}
-
-.empresa{
-   height: 250px;
-    width: 250px;
-    background-color: var(--color-pri);
-    border: 2px solid   #f7d372  ;
-    text-align: center;
-    padding: 2%;
-    margin: 2%;
-
-
-
-}
-
-
-.footer-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.banner {
+
+   background-size: cover;
+   background-position: center;
+   height: 600px;
+   position: relative;
+   display: flex;
+   align-items: flex-start;
+   /* alinha o conteúdo ao topo */
+   text-align: left;
+   /* texto à esquerda */
+   z-index: 1;
+}
+
+.banner::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   /* sombra sobre a imagem */
+   z-index: 1;
+}
+
+.banner-conteudo {
+   margin-top: 10%;
+   position: relative;
+   z-index: 2;
+   padding: 60px;
+   /* afasta do topo e da esquerda */
+   max-width: 600px;
+}
+
+.banner-titulo {
+   font-family: 'Poppins';
+   color: var(--branquinho);
+   font-size: 5em;
+   margin-bottom: 20px;
+}
+
+/* .banner-comprar { */
+/* .banner-comprar {
+   font-family: Questrial;
+   background: var(--roxomedio);
+   padding: 12px 25px;
+   border-radius: 5px;
+   color: #fff;
+   border: none;
+   font-size: 1em;
+   cursor: pointer;
+   box-shadow: 0 0 5px #00000080;
+   transition: transform 0.2s, box-shadow 0.2s;
+}
+} */
+
+.banner-comprar:hover {
+   transform: scale(1.015);
+   box-shadow: 0 0 10px #000000;
+}
+
+
+
+
+
+
+.footer-container {
+
+   display: flex;
     text-align: center;
     justify-content: space-around;
     max-width: 100%;
@@ -302,116 +261,129 @@ article p{
     /* background: #fedd00; */
     background: linear-gradient(to bottom, #fedc00,#f4971a );
 }
-.tituf{
-    text-align: center;
-    font-family: 'Bangers';
 
-    
+.tituf {
+   font-family: 'Bangers';
+   text-align: center;
 
-}
-.direitos{
 
-    text-align: center;
-    font-weight: bold;
 
 }
-.infos{
-    text-align: center;
-    font-weight: bold;
+
+.direitos {
+   font-family: Questrial;
+   text-align: center;
 
 }
+
+.infos {
+   font-family: Questrial;
+   text-align: center;
+
+}
+
+
 
 @media(width <=1024px) {
 
-    .menu-header{
-        width: 100%;
-        height: 100vh;
-        background: var(--color-pri);
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: -100%;
-        gap: 6rem;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        transition: .5s;
-    }
-    header h1{
-        font-size: 1.4rem;
-        margin-right: 5px;
-        font-family: 'Bangers';
-    }
 
-    #titulo{
-        margin: 0 auto;
-        font-size: 5rem;
-        font-family:'Bangers',sans-serif;
-    }
-    
-    
-    
-    #produtos{
-        display: block;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: column;
+   header {
+      height: 60px;
+   }
 
-    }
-    
-    .logo{
-        width: 60px;
-        height: 50px;
-        
-    }
-    .active {
-        left: 0;
-    }
-    /* MENU HAMBURGUER */
+   .menu-header {
+      width: 100%;
+      height: 100vh;
+      background: var(--roxomedio);
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: -100%;
+      gap: 6rem;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      transition: .5s;
+   }
 
-    .hamburguer {
-        display: block;
-        
-    }
+   header h1 {
+      font-size: 1.4rem;
+      margin-right: 5px;
+   }
 
-    /* Primeira linha */
-    .hamburguer.active .barra:first-child {
-        transform: translateY(13px) rotate(360deg) rotate(45deg);
-    }
-    /* Segunda linha */
-    .hamburguer.active .barra:nth-child(2) {
-        opacity: 0;
-    }
-    /* Terceira linha */
-    .hamburguer.active .barra:last-child {
-        transform: translateY(-13px) rotate(-360deg) rotate(-45deg);
-    } 
+   #titulo {
+      margin: 0 auto;
+      font-size: 1.2rem;
+   }
+
+   /* #produtos{
+       display: block;
+       flex-wrap: wrap;
+       justify-content: center;
+       flex-direction: column;
+
+   } */
+
+   .logo {
+      margin-left: -10px;
+      width: 60px;
+      height: 50px;
+
+   }
+
+   .active {
+      left: 0;
+   }
+
+   /* MENU HAMBURGUER */
+
+   .hamburguer {
+      display: block;
+      margin-top: 13px;
+
+   }
+
+   /* Primeira linha */
+   .hamburguer.active .barra:first-child {
+      transform: translateY(13px) rotate(360deg) rotate(45deg);
+   }
+
+   /* Segunda linha */
+   .hamburguer.active .barra:nth-child(2) {
+      opacity: 0;
+   }
+
+   /* Terceira linha */
+   .hamburguer.active .barra:last-child {
+      transform: translateY(-13px) rotate(-360deg) rotate(-45deg);
+   }
 
 
- .footer-content{
-        text-align: center;
-        width: 100%;
-        margin-left: 20px;
-        align-items: center;
-        flex-direction: column;
-    }
-  .footer-container{
-  text-align: center;
-  max-width: 100%;
+   .footer {
+      width: 100%;
+   }
 
-  }
+   .footer-container {
+      text-align: center;
+      width: 100%;
+   }
 
-  .tituf{
-    text-align: center;
-    font-size: 25px;
-    margin-top: 20px;
-  }
-  .direitos{
-    text-align: center;
-    margin: 10px;
-  }
-  .infos{
-    margin: 10px;
-    text-align: center;
-  }
+   .tituf {
+      text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+   }
+
+   .direitos {
+      font-size: 14px;
+      text-align: center;
+      margin: 10px;
+   }
+
+   .infos {
+      margin: 10px;
+      text-align: center;
+      font-size: 14px;
+   }
+
 }

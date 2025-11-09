@@ -1,3 +1,5 @@
+/* reset basico slk */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,31 +8,40 @@
 
 /* variaveis ae */
 :root{
-    --color-pri: #090d19;
+    --color-pri: #000000;
     --color-sec: #f7d372 ;
     --color-font1: #f1f1f1  ;
     --color-font2:#e0be5f ;
      --gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
 }
 body{
-    
-    background-size: cover;
-    background-position: center;
-    font-family: Cormorant, sans-serif;
+    background-color: var(--color-pri);
+    font-family: sans-serif;
     font-weight: 500;
     margin-right: 5px;
     margin-left: 0px;
-    background-image: url(../assets/fundo.jpg);
-    
-
+    /* margin-bottom: 30px; */
+    /* margin-top:30px ; */
     
 }
-
-
 
 html{
     scroll-behavior: smooth;
 }
+
+
+
+
+
+
+
+nav ul{
+    list-style: none;
+    margin-top: 15px;
+    
+}
+
+
 
 
 
@@ -53,13 +64,14 @@ html{
     position: relative;
     text-align: center;
     padding: 20px 0;
+    
 }
 .logo{
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
-  height: 60px;
+  height: 80px;
   
 }
 
@@ -70,11 +82,13 @@ header h1{
     font-weight: 100;
     z-index: 2;
     text-align: center;
-    color: #fff;
+    color: #fedd00;
     justify-content: space-around;
     list-style: none;
     margin-bottom: 15px;
     margin: 0;
+    font-family: 'Bangers';
+    font-size: 78px;
 }
 hr{
     border: none;
@@ -84,14 +98,11 @@ hr{
 }
 
 .menu-header {
-    margin-top: 10px;
     display: flex;
     gap: 5rem;
     justify-content: center;
-    list-style: none;
 
 }
-
 .item-menu{
     font-size: 20px;
     color:#f1f1f1;
@@ -101,6 +112,7 @@ hr{
     text-transform: uppercase;
 position: relative;
 display:inline-block ;
+font-family: 'Poppins';
  
 }
 .item-menu::after{
@@ -122,6 +134,7 @@ display:inline-block ;
 a:hover{
     color: var(--color-font2);
 }
+
 
 
 
@@ -153,43 +166,76 @@ a:hover{
     right: 20px;
     padding: 0,5px;
 }
-.conteudo{
 
-    margin: 10px;
-    padding: 10px;
-    color: #f1f1f1;
-    
-    text-align: center;
-}
-.pri{
-    color: #e0be5f;
-    text-align: center;
-    margin-bottom: 10px;
+#produtos{
+    display: grid;
+    margin-top: 75px;
+    justify-content: center;
+    margin-bottom: 75px;
+    flex-wrap: flex;
     
 }
 
-.seg{
-    color: #e0be5f;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    
-}
-
-.ter{
-    color: #e0be5f;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-/* 
-.footer-content{
+main{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.fantasia{
+    width: 350px;
+    height: 400px;
+    margin: 5px;
+    padding: 20px;
+    /* margin-top: 30px; */
+    
+    
+    background-color: #ffffff;
+    border :5px solid #d40f0d;
+
+}
+.fantasia:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--color-sec);
+    cursor: pointer;
+}
+.fantasia img{
+    
+    padding: 0px;
+    width: 100%;
+    height: 270px;
+    margin-bottom: 0px;
+    
+    
+    
+    
+}
+.fantasiad{
+    padding-top: 170px;
+    padding:20px;
+}
+
+article h4{
+    font-size: 25px;
+    color: black;
+}
+article p{
+    font-size: 20px;
+    color: black;
+
+
+}
+
+.footer-content{
+   
+    display: inline-flex;
     justify-content: space-around;
-    max-width: 100%;
-    margin-top: 10px;
+    width: 50%;
+    margin-left: 40px;
     color: #f1f1f1;
     font-size: 17px;
 }
-
     
 .footer-content h4{
     font-size: 1.3rem;
@@ -241,7 +287,7 @@ a:hover{
 
 
 
-} */
+}
 
 
 .footer-container{
@@ -250,23 +296,28 @@ a:hover{
     justify-content: space-around;
     max-width: 100%;
     margin-top: 10px;
-    color: var(--color-pri);
+    /* color: var(--color-pri); */
     padding: 20px;
     font-size: 17px;
-    background: #e0be5f;
+    /* background: #fedd00; */
+    background: linear-gradient(to bottom, #fedc00,#f4971a );
 }
 .tituf{
     text-align: center;
+    font-family: 'Bangers';
+
     
 
 }
 .direitos{
 
     text-align: center;
+    font-weight: bold;
 
 }
 .infos{
     text-align: center;
+    font-weight: bold;
 
 }
 
@@ -287,15 +338,26 @@ a:hover{
         transition: .5s;
     }
     header h1{
-        font-size: 2.1rem;
+        font-size: 1.4rem;
         margin-right: 5px;
+        font-family: 'Bangers';
     }
 
     #titulo{
         margin: 0 auto;
-        font-size: 1.2rem;
+        font-size: 5rem;
+        font-family:'Bangers',sans-serif;
     }
-   
+    
+    
+    
+    #produtos{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+
+    }
     
     .logo{
         width: 60px;
@@ -325,13 +387,14 @@ a:hover{
         transform: translateY(-13px) rotate(-360deg) rotate(-45deg);
     } 
 
-    .footer-content{
+
+ .footer-content{
         text-align: center;
-        max-width: 100%;
+        width: 100%;
+        margin-left: 20px;
         align-items: center;
         flex-direction: column;
     }
-
   .footer-container{
   text-align: center;
   max-width: 100%;

@@ -1,97 +1,4 @@
-const hamburguer = document.querySelector('.hamburguer');
-const headerMenu = document.querySelector('.menu-header');
 
-function toggleMenu() {
-        hamburguer.classList.toggle('active');
-        headerMenu.classList.toggle('active');
-}
-
-hamburguer.addEventListener('click', toggleMenu);
-headerMenu.addEventListener('click', (event) => {
-        if (event.target.classList.contains('item-menu')) {
-                toggleMenu();
-        }
-});
-
-
-
-// Criando um array com as imagens e informações do banner
-const bannerItems = [
-        {
-                imagem: "./src/assets/hqdeadpool.jpg",
-                titulo: "Seus heróis favoritos",
-                
-
-        },
-        {
-                imagem: "./src/assets/hqwolverine.jpg",
-                titulo: "Seja o herói",
-                
-
-
-        },
-        {
-                imagem: "./src/assets/hqhomemaranha.jpg",
-                titulo: "Vista a justiça",
-        
-
-        },
-        {
-                imagem: "./src/assets/hqhulk.jpg",
-                titulo: "Vista sua identidade",
-                
-
-
-        }
-
-];
-
-// Declarando as variaveis e elementos com dom (document object model)
-const tempo = 8000; // tempo em milissegundos
-const elementoBanner = document.querySelector(".banner");
-const elementoTitulo = document.querySelector(".banner-titulo");
-// const elementoDescricao=document.querySelector(".banner-descricao");
-
-
-let i = 0;
-
-//Criando a função slideShow
-
-//  Criando a função slideShow
-function slideShow() {
-
-        // ALTERA A IMAGEM DO FUNDO DO BANNER
-        elementoBanner.style.backgroundImage = `url(${bannerItems[i].imagem})`;
-        elementoTitulo.textContent = bannerItems[i].titulo;
-
-        console.log(`OBJETO ATUAL ${i}`);
-        console.log(`IMAGEM ${bannerItems[i].imagem}`);
-        console.log(`BANNER ${bannerItems[i].titulo}`);
-
-        i++;
-
-        if (i >= bannerItems.length) {
-                i = 0;
-        }
-
-        setTimeout(slideShow, tempo);
-}
-
-// Pré-carrega todas as imagens
-bannerItems.forEach(item => {
-        const img = new Image();
-        img.src = item.imagem;
-});
-
-slideShow();
-
-
-
-
-
-
-
-// evento que Aguarda o carregamento completo do DOM
 document.addEventListener("DOMContentLoaded", () => {
         // o DOM pega o id  login
         const Login = document.getElementById("login");
@@ -185,4 +92,26 @@ document.addEventListener("DOMContentLoaded", () => {
                         }
                 });
         }
+});
+
+
+
+
+
+
+
+// HHHAAAMMMBBBUUURRRGGGUUUEEERRRR
+const hamburguer = document.querySelector('.hamburguer');
+const headerMenu = document.querySelector('.menu-header');
+
+function toggleMenu(){
+    hamburguer.classList.toggle('active');
+    headerMenu.classList.toggle('active');
+}
+
+hamburguer.addEventListener('click', toggleMenu);
+headerMenu.addEventListener('click', (event) => {
+    if (event.target.classList.contains('item-menu')) {
+        toggleMenu();
+    }
 });

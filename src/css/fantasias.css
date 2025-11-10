@@ -202,10 +202,11 @@ a:hover {
 .hamburguer {
    cursor: pointer;
     position:relative;
-    z-index: 2;
+    
     
     display: none;
     flex-direction: column;
+    z-index: initial;
 
 
 }
@@ -242,10 +243,11 @@ main{
 }
 .fantasia{
     width: 350px;
-    height: 400px;
+    height: 420px;
     margin: 5px;
     padding: 20px;
     /* margin-top: 30px; */
+    margin-bottom: 5px;
     
     
     background-color: #ffffff;
@@ -270,8 +272,9 @@ main{
     
 }
 .fantasiad{
-    padding-top: 170px;
-    padding:10px;
+    padding-top: 165px;
+    padding:8px;
+    margin-bottom: 6px;
 }
 
 article h4{
@@ -293,6 +296,7 @@ article p{
     margin-left: 40px;
     color: #f1f1f1;
     font-size: 17px;
+    margin-bottom: 5px;
 }
     
 .footer-content h4{
@@ -362,7 +366,7 @@ article p{
 } 
 .tituf{
    text-align: center;
-    font-family: ' Bangers';
+   font-family: 'Bangers';
 
     
 
@@ -410,6 +414,7 @@ article p{
       display: block;
       margin-top: 4px;
       transform: translatey(-50%);
+      z-index: 4;
 
    }
 

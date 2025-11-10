@@ -16,7 +16,7 @@
 }
 body{
     background-color: var(--color-pri);
-    font-family: sans-serif;
+    font-family: 'Poppins';
     font-weight: 500;
     margin-right: 5px;
     margin-left: 0px;
@@ -37,8 +37,20 @@ html{
 
 nav ul{
     list-style: none;
-    margin-top: 15px;
+
+   display: flex;
+    gap: 5rem;
+    justify-content: center;
     
+}
+header{
+   background-color: #000000;
+   height: 120px;
+   color: var(--branquinho);
+   padding: 1px;
+   /* display: flex; */
+   
+   justify-content: space-around;
 }
 
 
@@ -49,7 +61,7 @@ nav ul{
 .inicio{
     width: 100%;
     min-height: 100dvh; /*Esta é uma unidade de medida relativa à altura da viewport dinâmica*/
-    padding: 1rem;
+    padding: 0rem;
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,30 +103,22 @@ header h1{
     font-size: 78px;
 }
 hr{
-    border: none;
-    height: 2px;
-    background-color: var(--color-sec);
-    width: -100vh;
+   border: none;
+    height: 1.5px;
+    background-color: #fedd00;
+    width: 100vw;
+    margin-top: -5px;
+    margin-left: -20px;
 }
 
 .menu-header {
     display: flex;
     gap: 5rem;
     justify-content: center;
+    list-style: none;
 
 }
-.item-menu{
-    font-size: 20px;
-    color:#f1f1f1;
-     text-decoration: none;
-    font-weight: 900;
-    transition: color .5s;
-    text-transform: uppercase;
-    position: relative;
-    display:inline-block ;
-    font-family: 'Poppins';
- 
-}
+
 #login::after {
    content: "";
   position: absolute;
@@ -179,6 +183,7 @@ a:hover {
 #login:hover{
    color:#fedd00;
    transition: witdh 0.3s ease;
+    transition: color .5s;
    
    
 }
@@ -195,12 +200,13 @@ a:hover {
 /* MENU HAMBURGUER */
 
 .hamburguer {
-    cursor: pointer;
+   cursor: pointer;
     position:relative;
     z-index: 2;
     
     display: none;
     flex-direction: column;
+
 
 }
 
@@ -216,7 +222,7 @@ a:hover {
     position: relative;
     top: -64px;
     right: 20px;
-    padding: 0,5px;
+    padding: 0.5px;
 }
 
 #produtos{
@@ -265,7 +271,7 @@ main{
 }
 .fantasiad{
     padding-top: 170px;
-    padding:20px;
+    padding:10px;
 }
 
 article h4{
@@ -343,20 +349,20 @@ article p{
 
 
 .footer-container{
-    display: flex;
+   display: flex;
     text-align: center;
     justify-content: space-around;
     max-width: 100%;
     margin-top: 10px;
     /* color: var(--color-pri); */
     padding: 20px;
-    font-size: 17px;
+    font-size: 15px;
     /* background: #fedd00; */
     background: linear-gradient(to bottom, #fedc00,#f4971a );
-}
+} 
 .tituf{
-    text-align: center;
-    font-family: 'Bangers';
+   text-align: center;
+    font-family: ' Bangers';
 
     
 
@@ -380,24 +386,57 @@ article p{
         height: 100vh;
         background: var(--color-pri);
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         top: 0;
         left: -100%;
-        gap: 6rem;
+        gap: 4rem;
         text-align: center;
         flex-direction: column;
         justify-content: center;
-        transition: .5s;
+        transition: width .5s;
+        display:flex;
+        align-items: center;
     }
     header h1{
-        font-size: 1.4rem;
+        
+        font-size: 4rem;
         margin-right: 5px;
-        font-family: 'Bangers';
+        
+    }
+    .topo{
+        padding-right: 2px;
+    }
+    .hamburguer {
+      display: block;
+      margin-top: 4px;
+      transform: translatey(-50%);
+
+   }
+
+   /* Primeira linha */
+   .hamburguer.active .barra:first-child {
+      transform: translateY(13px) rotate(360deg) rotate(45deg);
+   }
+
+   /* Segunda linha */
+   .hamburguer.active .barra:nth-child(2) {
+      opacity: 0;
+   }
+
+   /* Terceira linha */
+   .hamburguer.active .barra:last-child {
+      transform: translateY(-13px) rotate(-360deg) rotate(-45deg);
+   }
+   .logo{
+        /* width: 80px; */
+        height: 60px;
+        display: none;
+
     }
 
     #titulo{
         margin: 0 auto;
-        font-size: 5rem;
+        font-size: 60px;
         font-family:'Bangers',sans-serif;
     }
     
@@ -411,33 +450,15 @@ article p{
 
     }
     
-    .logo{
-        width: 60px;
-        height: 50px;
+    
         
-    }
+    
     .active {
         left: 0;
     }
     /* MENU HAMBURGUER */
 
-    .hamburguer {
-        display: block;
-        
-    }
-
-    /* Primeira linha */
-    .hamburguer.active .barra:first-child {
-        transform: translateY(13px) rotate(360deg) rotate(45deg);
-    }
-    /* Segunda linha */
-    .hamburguer.active .barra:nth-child(2) {
-        opacity: 0;
-    }
-    /* Terceira linha */
-    .hamburguer.active .barra:last-child {
-        transform: translateY(-13px) rotate(-360deg) rotate(-45deg);
-    } 
+    
 
 
  .footer-content{
@@ -457,6 +478,7 @@ article p{
     text-align: center;
     font-size: 25px;
     margin-top: 20px;
+    font-family: 'Bangers';
   }
   .direitos{
     text-align: center;
@@ -466,4 +488,5 @@ article p{
     margin: 10px;
     text-align: center;
   }
+
 }

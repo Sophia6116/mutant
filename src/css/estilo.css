@@ -17,7 +17,7 @@ body{
    background-color: #000000;
     font-family: sans-serif;
     font-weight: 500;
-    margin-right: 5px;
+    margin-right: 0px;
     margin-left: 0px;
     /* margin-bottom: 30px; */
     /* margin-top:30px ; */
@@ -93,6 +93,15 @@ a:hover {
    text-align: center;
    padding: 20px 0;
    margin-top: -20px;
+   
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: #fedd00;
+    width: 100vw;
+    margin-top: -5px;
+    margin-left: -20px;
 }
 
 .logo {
@@ -111,7 +120,7 @@ header {
    color: var(--branquinho);
    padding: 20px;
    /* display: flex; */
-
+   
    justify-content: space-around;
 }
 
@@ -134,7 +143,7 @@ header h1 {
 .menu-header {
    list-style: none;
 
-  display: flex;
+   display: flex;
     gap: 5rem;
     justify-content: center;
 
@@ -197,7 +206,7 @@ header h1 {
 .inicio{
     width: 100%;
     min-height: 100dvh; /*Esta é uma unidade de medida relativa à altura da viewport dinâmica*/
-    padding: 1rem;
+    padding: 0rem;
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,7 +221,7 @@ header h1 {
 
    background-size: cover;
    background-position: center;
-   height: 600px;
+   height: 650px;
    position: relative;
    display: flex;
    align-items: flex-start;
@@ -238,7 +247,7 @@ header h1 {
    margin-top: 10%;
    position: relative;
    z-index: 2;
-   padding: 60px;
+   padding: 2rem;
    /* afasta do topo e da esquerda */
    max-width: 600px;
 }
@@ -281,10 +290,10 @@ header h1 {
     text-align: center;
     justify-content: space-around;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
     /* color: var(--color-pri); */
     padding: 20px;
-    font-size: 17px;
+    font-size: 15px;
     /* background: #fedd00; */
     background: linear-gradient(to bottom, #fedc00,#f4971a );
 }
@@ -298,13 +307,13 @@ header h1 {
 }
 
 .direitos {
-   font-family: Questrial;
+   font-family: 'Poppins';
    text-align: center;
 
 }
 
 .infos {
-   font-family: Questrial;
+   font-family: 'Poppins';
    text-align: center;
 
 }
@@ -333,9 +342,9 @@ header h1 {
       transition: .5s;
    }
 
-   header h1 {
-      font-size: 1.4rem;
-      margin-right: 5px;
+   header h1{
+        font-size: 3rem;
+        margin-right: 5px;
    }
 
    #titulo {
@@ -351,12 +360,11 @@ header h1 {
 
    } */
 
-   .logo {
-      margin-left: -10px;
-      width: 60px;
-      height: 50px;
-
-   }
+   .logo{
+        /* width: 80px; */
+        height: 60px;
+        
+    }
 
    .active {
       left: 0;
@@ -366,7 +374,8 @@ header h1 {
 
    .hamburguer {
       display: block;
-      margin-top: 13px;
+      margin-top: 4px;
+      transform: translatey(-50%);
 
    }
 
@@ -399,6 +408,7 @@ header h1 {
       text-align: center;
       font-size: 15px;
       margin-top: 20px;
+      font-family: 'Bangers';
    }
 
    .direitos {

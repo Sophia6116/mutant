@@ -6,22 +6,21 @@
 
 /* variaveis ae */
 :root{
-    --color-pri: #090d19;
-    --color-sec: #f7d372 ;
+    --color-pri: #000000;
+    --color-sec: #fedd00 ;
     --color-font1: #f1f1f1  ;
     --color-font2:#e0be5f ;
      --gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
 }
 body{
     
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
-    font-family: Cormorant, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-right: 5px;
     margin-left: 0px;
-    background-image: url(../assets/fundo.jpg);
-    
+    background-color: var(--color-pri);
 
     
 }
@@ -31,6 +30,14 @@ body{
 html{
     scroll-behavior: smooth;
 }
+nav ul{
+    list-style: none;
+
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    
+}
 
 
 
@@ -38,7 +45,7 @@ html{
 .inicio{
     width: 100%;
     min-height: 100dvh; /*Esta é uma unidade de medida relativa à altura da viewport dinâmica*/
-    padding: 1rem;
+    padding: 0rem;
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,14 +59,15 @@ html{
 .topo{
     position: relative;
     text-align: center;
-    padding: 20px 0;
+     padding: 20px 0; 
+     
 }
 .logo{
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
-  height: 60px;
+  height: 80px;
   
 }
 
@@ -70,38 +78,67 @@ header h1{
     font-weight: 100;
     z-index: 2;
     text-align: center;
-    color: #fff;
+    color: #fedd00;
     justify-content: space-around;
     list-style: none;
     margin-bottom: 15px;
     margin: 0;
+    font-family: 'Bangers';
+    font-size: 78px;
 }
 hr{
     border: none;
-    height: 2px;
-    background-color: var(--color-sec);
-    width: -100vh;
+    height: 1.5px;
+    background-color: #fedd00;
+    width: 100vw;
+    margin-top: -5px;
+    margin-left: -20px;
 }
 
 .menu-header {
-    margin-top: 10px;
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
     list-style: none;
 
+   display: flex;
+    gap: 5rem;
+    justify-content: center;
+
+
+}
+#login::after {
+   content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-sec);
+  transition: width 0.3s ease;
+}
+#login{
+   font-size: 20px;
+   color:#f1f1f1;
+   text-decoration: none;
+   font-weight: 900;
+   transition: color .5s;
+   text-transform: uppercase;
+   position: relative;
+   z-index:10;
+   display:inline-block ;
+   font-family: 'Poppins';
 }
 
 .item-menu{
     font-size: 20px;
-    color:#f1f1f1;
-     text-decoration: none;
-    font-weight: 900;
-    transition: color .5s;
-    text-transform: uppercase;
-position: relative;
-display:inline-block ;
- 
+   color:#f1f1f1;
+   text-decoration: none;
+   font-weight: 900;
+   transition: color .5s;
+   text-transform: uppercase;
+   position: relative;
+   z-index:10;
+   display:inline-block ;
+   font-family: 'Poppins';
+
 }
 .item-menu::after{
   content: "";
@@ -121,6 +158,16 @@ display:inline-block ;
 
 a:hover{
     color: var(--color-font2);
+}
+#login:hover::after{
+   width: 100%;
+}
+#login:hover{
+   color:#fedd00;
+   transition: witdh 0.3s ease;
+   transition: color .5s;
+   
+   
 }
 
 
@@ -151,10 +198,10 @@ a:hover{
     position: relative;
     top: -64px;
     right: 20px;
-    padding: 0,5px;
+    padding: 0.5px;
 }
 .conteudo{
-
+    
     margin: 10px;
     padding: 10px;
     color: #f1f1f1;
@@ -245,28 +292,33 @@ a:hover{
 
 
 .footer-container{
-    display: flex;
+   display: flex;
     text-align: center;
     justify-content: space-around;
     max-width: 100%;
     margin-top: 10px;
-    color: var(--color-pri);
+    /* color: var(--color-pri); */
     padding: 20px;
-    font-size: 17px;
-    background: #e0be5f;
+    font-size: 15px;
+    /* background: #fedd00; */
+    background: linear-gradient(to bottom, #fedc00,#f4971a );
 }
 .tituf{
     text-align: center;
+    font-family: 'Bangers';
+
     
 
 }
 .direitos{
 
     text-align: center;
+     font-weight: bold;
 
 }
 .infos{
     text-align: center;
+     font-weight: bold;
 
 }
 
@@ -277,17 +329,17 @@ a:hover{
         height: 100vh;
         background: var(--color-pri);
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         top: 0;
         left: -100%;
         gap: 6rem;
         text-align: center;
         flex-direction: column;
         justify-content: center;
-        transition: .5s;
+        transition: width .5s;
     }
     header h1{
-        font-size: 2.1rem;
+        font-size: 3rem;
         margin-right: 5px;
     }
 
@@ -298,8 +350,8 @@ a:hover{
    
     
     .logo{
-        width: 60px;
-        height: 50px;
+        /* width: 80px; */
+        height: 60px;
         
     }
     .active {
@@ -309,6 +361,9 @@ a:hover{
 
     .hamburguer {
         display: block;
+      margin-top: 4px;
+      transform: translatey(-50%);
+
         
     }
 
@@ -342,6 +397,7 @@ a:hover{
     text-align: center;
     font-size: 25px;
     margin-top: 20px;
+    font-family: 'Bangers';
   }
   .direitos{
     text-align: center;

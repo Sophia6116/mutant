@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 const { email, senha } = resultado.value;
 
                                 // Simulação de autenticação
-                                if (email === "dreamwear" && senha === "12345") {
+                                if (email === "@mutant" && senha === "123456") {
                                         //verifica se o email e senha estão validos
                                         window.location.href = "https://umdiadeprogramador.github.io/ErrosCorrecao.ori/"; //direciona para a pagina perfil
                                         Swal.fire({
